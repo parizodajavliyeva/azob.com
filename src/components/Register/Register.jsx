@@ -9,7 +9,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      await axios.post("https://nazorat-ishi-default-rtdb.firebaseio.com/users.json", userData);
+      await axios.post("https://nazorat-ishi-4998f-default-rtdb.firebaseio.com/users.json", userData);
       navigate("/");
     } catch (error) {
       console.error("Registration failed:", error);

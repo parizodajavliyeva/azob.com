@@ -12,7 +12,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const { data } = await axios.get("https://nazorat-ishi-default-rtdb.firebaseio.com/users.json");
+      const { data } = await axios.get("https://nazorat-ishi-4998f-default-rtdb.firebaseio.com/users.json");
       const users = Object.values(data || {});
       const isValidUser = users.some((user) => user.username === credentials.username && user.password === credentials.password);
 
